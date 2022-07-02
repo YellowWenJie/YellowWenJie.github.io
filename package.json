@@ -1,33 +1,26 @@
 {
-  "name": "hexo-theme-butterfly",
-  "version": "4.3.1",
-  "description": "A Simple and Card UI Design theme for Hexo",
-  "main": "package.json",
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
-  "keywords": [
-    "hexo",
-    "theme",
-    "butterfly",
-    "Card UI Design",
-    "Jerry",
-    "hexo-theme-butterfly"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jerryc127/hexo-theme-butterfly.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jerryc127/hexo-theme-butterfly/issues",
-    "email": "my@crazywong.com"
+  "hexo": {
+    "version": "6.2.0"
   },
   "dependencies": {
-    "hexo-renderer-pug": "^3.0.0",
+    "hexo": "^6.2.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.1.0",
-    "hexo-theme-butterfly": "^4.3.1"
-  },
-  "homepage": "https://butterfly.js.org/",
-  "author": "Jerry <my@crazywong.com>",
-  "license": "Apache-2.0"
+    "hexo-server": "^3.0.0",
+    "hexo-theme-landscape": "^0.0.3"
+  }
 }
